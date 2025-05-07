@@ -1,0 +1,189 @@
+/* Zerar CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Variáveis de cor */
+:root {
+
+    --corPrimaria: rgba(0, 128, 38, 0.432);
+    --corSecundaria: rgb(211, 207, 207);
+    --corTexto: rgb(19, 18, 18);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--corPrimaria);
+    border-radius: 0;
+}
+
+/* Home */
+.home {
+    height: 800px;
+    background-image: url(../img/drone.jpg);
+    background-size: cover;
+    border-radius: 0;
+    position: relative;
+}
+
+.home>h1 {
+    width: 30%;
+    font-size: 30px;
+    height: 15%;
+    padding: 20px;
+    position: absolute;
+    margin: 500px 50px;
+    background-color: var(--corSecundaria);
+}
+
+.home>p {
+    width: 30%;
+    font-size: 20px;
+    padding: 10px 20px;
+    position: absolute;
+    margin: 550px 50px;
+}
+
+/* Lista do menu */
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+/* Linhas do menu de navegação */
+.menu>li {
+    list-style: none;
+    height: 100%;
+}
+
+/* Texto da seção de imagens */
+main>h2 {
+    margin: 50px;
+    text-decoration: underline;
+}
+
+/* Seções de imagens */
+.area_oeste,
+.area_leste {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Efeitos ao passar o mouse */
+.parnaso > p, .cascata > p, .fazenda > p,
+.museu > p, .palacio > p, .catedral > p{
+    color: white;
+
+
+}
+
+.parnaso > img:hover + p, .cascata > img:hover + p, .fazenda > img:hover + p,
+.museu > img:hover + p, .palacio > img:hover + p, .catedral > img:hover + p {
+   color: white;
+   font-size: 20px;
+   font-weight: bold;
+   margin-top: -190px;
+   text-align: center;
+    
+
+}
+
+
+/* Seção de Guia Turístico */
+.turismo {
+    margin: 20px;
+    background-color: var(--corSecundaria);
+}
+
+.turismo>h2 {
+    padding: 20px;
+    text-decoration: underline;
+}
+
+.turismo>h3,
+h4 {
+    padding: 5px 20px;
+}
+
+.turismo>p {
+    padding: 20px;
+}
+
+/* Artigo de eventos */
+.eventos {
+    width: 40%;
+    margin: 20px;
+    padding: 20px;
+    border: 2px dotted var(--corTexto);
+}
+
+.eventos>h4 {
+    padding: 10px 0px;
+}
+
+.eventos>p {
+    padding: 0;
+}
+
+/* Artigo de gastronomia */
+.gastronomia {
+    width: 40%;
+    margin: 20px;
+    padding: 20px;
+    border: 2px dotted var(--corTexto)
+}
+
+.gastronomia>h4 {
+    padding: 10px 0px;
+}
+
+.gastronomia>p {
+    padding: 0;
+}
+
+/* Container das seções eventos e gastronomia */
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* Rodapé */
+footer {
+    height: 80px;
+    background-color: var(--corPrimaria);
+    border-radius: 0;
+    
+}
+
+footer>ul {
+    height: 100%;
+    padding: 0px 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+
+/* Links */
+a {
+    color: var(--corTexto);
+    text-decoration: none;
+}
